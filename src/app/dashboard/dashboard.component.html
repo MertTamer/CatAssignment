@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <div class="row mb-4">
+    <div class="col-sm-12 col-md-12 col-lg-3">
+      <div class="btn-group" dropdown>
+        <button id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle" aria-controls="dropdown-basic">
+          Categories <span class="caret"></span>
+        </button>
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+          <li *ngFor="let category of categories" role="menuitem"><a class="dropdown-item" (click)="selectCategory(category.id)">{{category.name | titlecase }}</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-9">
+      <h1>Random Cat Image</h1>
+      <div *ngIf="randomCatImage">
+        <img src="{{this.randomCatImage[0].url}}" class="img-fluid img-height" alt="Random cat image">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h1>Images By Category</h1>
+    </div>
+    <div *ngFor="let image of imagesByCategory" class="col-sm-12 col-md-6 col-lg-4 mb-2">
+      <img src="{{image.url}}" class="img-fluid" alt="Image by category">
+    </div>
+  </div>
+</div>

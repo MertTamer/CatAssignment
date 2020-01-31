@@ -1,27 +1,37 @@
-# CatAssignment
+# Cat Assignment for ABN AMRO
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
+This is an assignment application for ABN AMRO using Angular 8. The application shows random pictures of cats and as well has the functionality to search cat images by category.
 
-## Development server
+## Clone the repo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```shell
+git clone https://github.com/MertTamer/CatAssignment
+cd CatAssignment
+```
 
-## Code scaffolding
+## Install npm packages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+In order to install the npm packages and serve the application, use the commands below:
+
+```shell
+npm install
+npm start
+```
+
+The running application can be viewed in your browser through: http://localhost:4200/
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+In order to make the application production ready, use the command as shown below.
 
-## Running unit tests
+```shell
+ng build --prod
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Architectural decisions
 
-## Running end-to-end tests
+Angular is the framework I have the most experience with. Although it is not the most lightweight framework, the built-in features are very complete to create single page applications. If the application gets bigger in the future, Angular would be a very suited choice as well. 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+In order to make the application responsive and mobile friendly, I have used Bootstrap v4. This is a framework I am really familiar with and has everything out of the box to make an application responsive.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+In the future I would like separate the Dashboard component in to smaller components, but due to the time limitation I have implemented all the features in a single component. 

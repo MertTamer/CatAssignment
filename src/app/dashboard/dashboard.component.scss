@@ -1,0 +1,28 @@
+.btn-group {
+  width: 100%;
+}
+
+.dropdown-toggle {
+  background-color: #00716b;
+  border: none;
+
+  &:hover {
+    background-color: #00857a;
+  }
+
+  &:active {
+    background-color: #00857a;
+  }
+}
+
+.show>.btn-primary.dropdown-toggle {
+  background-color: #00857a;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}
+
+.img-height {
+  height: 500px;
+}
